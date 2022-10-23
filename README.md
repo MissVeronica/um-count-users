@@ -1,6 +1,12 @@
 # UM Count Users
 Shortcode ```[um_count_users_custom]``` to list number of users with same meta_values for a meta_key
 
+Supported UM fields:
+1. Dropdown
+2. Multi-select
+3. Radio
+4. Checkbox
+
 Examples with a list of number of users from ```country``` and sorting options with Title and Subtitle
 ```
 [um_count_users_custom meta_key="country"]
