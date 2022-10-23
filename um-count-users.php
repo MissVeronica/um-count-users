@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     Ultimate Member - Count Users
- * Description:     Extension to Ultimate Member with a shortcode [count_users_custom] to list number of users with same meta_values for a meta_key.
+ * Description:     Extension to Ultimate Member with a shortcode [um_count_users_custom] to list number of users with same meta_values for a meta_key.
  * Version:         1.0.0
  * Requires PHP:    7.4
  * Author:          Miss Veronica
@@ -15,10 +15,10 @@
 if( !defined( 'ABSPATH' )) exit;
 if( !class_exists( 'UM' )) return;
 
-add_shortcode( 'count_users_custom', 'count_users_custom_shortcode' );
+add_shortcode( 'um_count_users_custom', 'um_count_users_custom_shortcode' );
 
-function count_users_custom_shortcode( $atts, $contents = null ) {
-	global $wpdb;
+function um_count_users_custom_shortcode( $atts, $contents = null ) {
+    global $wpdb;
     if( empty( $atts['meta_key'] )) return 'No meta_key';
     $meta_key = sanitize_text_field( $atts['meta_key'] );
     $users = $wpdb->get_col( "
