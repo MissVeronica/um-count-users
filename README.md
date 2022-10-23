@@ -4,6 +4,7 @@ Shortcode ```[count_users_custom]``` to list number of users with same meta_valu
 Examples with a list of number of users from ```country``` and sorting options with Title and Subtitle
 ```
 [count_users_custom meta_key="country"]
+
 [count_users_custom meta_key="country" sort="meta_value"]
 [count_users_custom meta_key="country" sort="count-asc"]    sort count ascending
 [count_users_custom meta_key="country" sort="count-desc"]   sort count descending
