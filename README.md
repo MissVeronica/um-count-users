@@ -24,7 +24,7 @@ title %d text: where %d is number of users if present
 subtitle %d text: where %d is number of users with empty meta_value if present and number of users not zero
 ```
 ## Notes
-1. Country flags requires the UM Free Extended Plugin "Displays Country flag in Member Directory and User Profiles" to be installed and active. The parameter countryflags set to true will consider any meta_key name to be of type country either with country name or country code as in WooCommerce country fields. 
+1. Country flags requires the UM Free Extended Plugin "Displays Country flag in Member Directory and User Profiles" to be installed and active. The parameter countryflags set to true will consider any meta_key name to be of type country either with country name or country code as in WooCommerce country fields. https://github.com/ultimatemember/Extended
 ## Updates
 Current version 2.0.0 New Country Flags
 ## Installation
